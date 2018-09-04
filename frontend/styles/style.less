@@ -1,0 +1,110 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New';
+    height: 100%;
+}
+
+#root-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.top-toolbar {
+    width: 100%;
+    background-color: black;
+    order: 1;
+    color: white;
+
+    .toolbar-wrapper {
+        margin: 0 20px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.main-menu, .secondary-menu, .content, .options button {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.main-menu, .secondary-menu, .content {
+    ul {
+        list-style: none;
+
+        li:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.main-menu, .secondary-menu {
+    ul li:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+.main-menu ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.secondary-menu ul li {
+    line-height: 2em;
+    margin: 0px;
+    -webkit-margin-after: 0px;
+    width: 175px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+
+    order: 2;
+    flex-grow: 1;
+}
+
+.left-menu {
+    order: 1;
+    flex-grow: 1;
+    border-right: 5px solid black;
+}
+
+.content {
+    order: 2;
+    flex-grow: 10;
+    padding: 0 10px;
+
+    ul {
+        padding: 0px;
+    }
+}
+
+li.item {
+    line-height: 2em;
+    background: #d6d6d6;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .options button {
+        background: #b3b3b3;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+}

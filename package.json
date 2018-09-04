@@ -1,0 +1,35 @@
+{
+  "name": "client-monitoring-system",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "8.9.0"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "grunt build && node backend/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "~1.6.8",
+    "angular-resource": "~1.6.9",
+    "angular-ui-router": "~1.0.3",
+    "body-parser": "~1.18.2",
+    "express": "~4.16.2",
+    "lodash": "~4.5.1",
+    "mongoose": "~5.0.15",
+    "pg": "^7.4.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "~1.1.0",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-less": "~1.4.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-include-source": "~1.1.0",
+    "grunt-injector": "~1.1.0",
+    "jit-grunt": "~0.10.0"
+  }
+}
